@@ -365,10 +365,11 @@ footer.site-foot{ background:var(--green-deep); text-align:center; padding:28px 
   position:fixed; left:22px; bottom:22px; z-index:70;
   width:48px; height:48px; border-radius:50%; background:rgba(30,59,44,.9); color:var(--ivory-deep);
   border:1px solid var(--gold-line); display:flex; align-items:center; justify-content:center;
-  opacity:0; transition:opacity 1s ease .5s;
+  opacity:0; transition:opacity 1s ease .5s; cursor:pointer;
 }
 body.site-ready #sound-toggle{ opacity:.92; }
-#sound-toggle svg{ width:20px; height:20px; }
+#sound-toggle:hover{ opacity:1; background:rgba(30,59,44,1); }
+#sound-toggle svg{ width:20px; height:20px; pointer-events:none; }
 
 .hidden-audio-note{ display:none; }
 
@@ -416,8 +417,9 @@ body.site-ready #sound-toggle{ opacity:.92; }
     <p style="font-family:var(--special);font-style:italic;color:#FFF3D5;margin:0 0 18px;font-size:1.05rem;text-shadow:0 2px 8px rgba(0,0,0,.7)">Together, a beautiful new chapter begins</p>
     <div class="datetime">
       <span>Saturday, 28 November 2026</span>
-      <span>10:30 AM</span>
+      <span>10:30 AM - 11:30 AM</span>
     </div>
+    <p style="font-family:var(--body);color:#FFF3D5;margin:14px 0 0;font-size:1rem;text-shadow:0 2px 8px rgba(0,0,0,.7)">Engagement followed by Lunch</p>
   </div>
   <div class="scroll-cue"><span>Scroll</span><span class="line"></span></div>
 </section>
@@ -445,7 +447,8 @@ body.site-ready #sound-toggle{ opacity:.92; }
     <div class="date-month">November</div>
     <div class="date-year">2026</div>
     <div class="date-sub">Saturday</div>
-    <div class="date-mal">10:30 AM</div>
+    <div class="date-mal">10:30 AM - 11:30 AM</div>
+    <p style="font-family:var(--body);color:var(--gold-bright);margin:8px 0 0;font-size:1rem;letter-spacing:.05em;">Engagement followed by Lunch</p>
     <!-- <div class="cd-wrap" id="countdown">
       <div class="cd-grid">
         <div class="cd-cell"><b id="cd-d">--</b><span>Days</span></div>
@@ -462,7 +465,8 @@ body.site-ready #sound-toggle{ opacity:.92; }
 <section id="reception">
   <div class="wrap rec-box" data-reveal>
     <p class="eyebrow">Engagement Ceremony</p>
-    <p class="rec-time">10:30 AM</p>
+    <p class="rec-time">10:30 AM - 11:30 AM</p>
+    <p style="font-family:var(--body);color:var(--brown);margin:8px 0 18px;font-size:1rem;">Engagement followed by Lunch</p>
     <p class="rec-venue-name">The White House</p>
     <p class="rec-venue-addr">The Capitol Hotel, Bangalore</p>
     <div class="btn-row">
@@ -480,7 +484,8 @@ body.site-ready #sound-toggle{ opacity:.92; }
     <p class="addr" style="font-family:var(--special);font-style:italic;font-size:1.5rem;color:var(--green)">The White House</p>
     <p class="vhotel">The Capitol Hotel</p>
     <p class="addr">No. 3, Rajbhavan Road,<br>Opp. General Post Office (GPO),<br>Bangalore – 560001.</p>
-    <p class="addr">Saturday, 28 November 2026 · 10:30 AM</p>
+    <p class="addr">Saturday, 28 November 2026 · 10:30 AM - 11:30 AM</p>
+    <p class="addr" style="margin-top:8px;font-style:italic;">Engagement followed by Lunch</p>
     <div class="btn-row">
       <a class="pill-btn" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=The+Capital+Hotel%2C+3+Raj+Bhavan+Road%2C+Bengaluru+560001">View Location</a>
       <a class="pill-btn" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&destination=The+Capital+Hotel%2C+3+Raj+Bhavan+Road%2C+Bengaluru+560001">Get Directions</a>
