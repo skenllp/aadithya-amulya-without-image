@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>OG Image Generator</title>
+<style>
+body {
+  margin: 0;
+  padding: 20px;
+  background: #333;
+  font-family: Arial, sans-serif;
+}
+#og-card {
+  width: 1200px;
+  height: 630px;
+  background: linear-gradient(135deg, #F8F2E4 0%, #EFE3C8 100%);
+  position: relative;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.frame-outer {
+  position: absolute;
+  inset: 20px;
+  border: 2px solid rgba(176, 129, 60, 0.6);
+}
+.frame-inner {
+  position: absolute;
+  inset: 28px;
+  border: 1px solid rgba(176, 129, 60, 0.35);
+}
+.content {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 80px 60px;
+  z-index: 2;
+}
+.om-symbol {
+  font-family: Georgia, serif;
+  color: #7C2E2E;
+  font-size: 32px;
+  margin-bottom: 20px;
+  letter-spacing: 0.1em;
+}
+.names {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 86px;
+  color: #1E3B2C;
+  line-height: 1.1;
+  margin: 20px 0;
+  font-weight: 500;
+}
+.amp {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-style: italic;
+  font-size: 52px;
+  color: #B0813C;
+  margin: 10px 0;
+}
+.label {
+  font-family: 'Cinzel', serif;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  font-size: 24px;
+  color: #B0813C;
+  margin: 25px 0 15px;
+}
+.datetime {
+  font-family: Georgia, serif;
+  font-size: 28px;
+  color: #6B4B32;
+  margin: 15px 0;
+  line-height: 1.6;
+}
+.venue {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-style: italic;
+  font-size: 30px;
+  color: #1E3B2C;
+  margin-top: 20px;
+}
+.hotel {
+  font-family: Georgia, serif;
+  font-size: 24px;
+  color: #6B4B32;
+  margin-top: 8px;
+}
+.divider {
+  width: 80px;
+  height: 1px;
+  background: rgba(176, 129, 60, 0.5);
+  margin: 25px auto;
+  position: relative;
+}
+.divider::before {
+  content: '❖';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #F8F2E4;
+  color: #B0813C;
+  font-size: 14px;
+  padding: 0 10px;
+}
+.corner {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  stroke: #B0813C;
+  stroke-width: 1.5;
+  fill: none;
+}
+.corner.tl { top: 18px; left: 18px; }
+.corner.tr { top: 18px; right: 18px; transform: scaleX(-1); }
+.corner.bl { bottom: 18px; left: 18px; transform: scaleY(-1); }
+.corner.br { bottom: 18px; right: 18px; transform: scale(-1); }
+</style>
+</head>
+<body>
+
+<div id="og-card">
+  <svg class="corner tl" viewBox="0 0 60 60">
+    <path d="M2 40 Q2 2 40 2" />
+    <path d="M2 26 Q2 2 26 2" />
+    <circle cx="2" cy="2" r="2.5" fill="#B0813C"/>
+  </svg>
+  <svg class="corner tr" viewBox="0 0 60 60">
+    <path d="M2 40 Q2 2 40 2" />
+    <path d="M2 26 Q2 2 26 2" />
+    <circle cx="2" cy="2" r="2.5" fill="#B0813C"/>
+  </svg>
+  <svg class="corner bl" viewBox="0 0 60 60">
+    <path d="M2 40 Q2 2 40 2" />
+    <path d="M2 26 Q2 2 26 2" />
+    <circle cx="2" cy="2" r="2.5" fill="#B0813C"/>
+  </svg>
+  <svg class="corner br" viewBox="0 0 60 60">
+    <path d="M2 40 Q2 2 40 2" />
+    <path d="M2 26 Q2 2 26 2" />
+    <circle cx="2" cy="2" r="2.5" fill="#B0813C"/>
+  </svg>
+  
+  <div class="frame-outer"></div>
+  <div class="frame-inner"></div>
+  
+  <div class="content">
+    <div class="om-symbol">ॐ</div>
+    <div class="names">Aadithya<div class="amp">&</div>Amulya</div>
+    <div class="divider"></div>
+    <div class="label">Engagement Ceremony</div>
+    <div class="datetime">Saturday, 28 November 2026<br>10:30 AM</div>
+    <div class="divider"></div>
+    <div class="venue">The White House</div>
+    <div class="hotel">The Capitol Hotel, Bangalore</div>
+  </div>
+</div>
+
+<div style="text-align: center; margin-top: 30px; color: white;">
+  <p>Right-click the image above and select "Save As" to download as og-image.jpg</p>
+  <p>Or take a screenshot (1200x630px)</p>
+</div>
+
+</body>
+</html>
